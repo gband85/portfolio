@@ -123,16 +123,21 @@ max-height: 100%;
   left: 0;
   content: '';
 }
-.project-tile img{
+/* .project-tile img{
   width: 50%;
   height: 82px;
   
-}
+} */
 
 .project-tile {
   display: flex;
-  
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.project-tile img {
+  width: 50%;
+  height: 82px;
 }
 
 #welcome-section h1,h2 {
