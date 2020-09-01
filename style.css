@@ -157,7 +157,7 @@ background: rgba(0, 0, 0, 0.6);
   /* flex-grow: 0; */
   /* align-self: center; */
 }
-.project-tile img:hover {
+.project-tile:hover {
   opacity: 0.6;
 }
 
