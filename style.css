@@ -107,6 +107,10 @@ max-height: 100%;
 #welcome-section {
   background: url(./road.jpg) no-repeat center center/cover;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 #welcome-section::before {
   background: rgba(0, 0, 0, 0.6);
@@ -116,4 +120,13 @@ max-height: 100%;
   top: 0;
   left: 0;
   content: '';
+}
+.project-tile img{
+  width: 50%;
+  height: 50%;
+}
+
+#welcome-section h1,h2 {
+color: white;
+z-index: 55;
 }
