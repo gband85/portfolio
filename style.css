@@ -132,25 +132,25 @@ max-height: 100%;
 .project-tile {
   display: flex;
   flex-direction: column;
-
+justify-content: center;
   align-items: center;
+  align-content: center;
   /* position: relative; */
   /* width: 50%; */
 }
 
-/* .project-tile:hover  {
-background: rgba(0, 0, 0, 0.6);
-  content: 'ttt';
- } */
+.project-tile a  {
+background-color: royalblue;
+width: 50%;
+ }
 
 .project-link  {
   /* text-align: center; */
-  width: 100%;
-}
-.project-link {
-  /* text-align: center; */
+  width: auto;
+  display: flex;
   background-color: royalblue;
 }
+
 .project-tile img {
   width: 50%;
   /* height: 82px; */
