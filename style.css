@@ -132,7 +132,8 @@ max-height: 100%;
 .project-tile {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+
+  align-items: center;
 }
 
 .project-tile img {
