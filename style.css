@@ -134,15 +134,36 @@ max-height: 100%;
   flex-direction: column;
 
   align-items: center;
+  /* position: relative; */
+  /* width: 50%; */
 }
 
+/* .project-tile:hover  {
+background: rgba(0, 0, 0, 0.6);
+  content: 'ttt';
+ } */
+
+.project-link  {
+  /* text-align: center; */
+  width: 100%;
+}
+.project-link {
+  /* text-align: center; */
+  background-color: royalblue;
+}
 .project-tile img {
   width: 50%;
   /* height: 82px; */
   /* flex-grow: 0; */
   /* align-self: center; */
 }
+.project-tile img:hover {
+  opacity: 0.6;
+}
 
+/* .project-tile a {
+  text-align: center;
+} */
 #welcome-section h1,h2 {
 color: white;
 z-index: 10;
