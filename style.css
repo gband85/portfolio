@@ -7,6 +7,8 @@
 html,
 body {
   line-height: 1.7em;
+  /* max-width: 1850px; */
+  min-width: 300px;
 }
 h1,
 h2,
@@ -53,11 +55,15 @@ a {
   }*/
 #projects {
       display: grid;
+      row-gap: 2em;
     background-color: lightgray;
-    border-bottom: 1px solid black;
-grid-template-columns: repeat(3,1fr);
-justify-content: center;
-  align-items: center;
+    /* border-bottom: 1px solid black; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+grid-template-columns: repeat(4,1fr);
+
+  justify-items: center;
+  
   }
 
 /* #contact {
@@ -140,8 +146,10 @@ justify-content: center;
 }
 
 .project-tile a  {
-background-color: royalblue;
-width: 50%;
+background-color: #0c5196;
+width: 391px;
+text-align: center;
+color: white;
  }
 
 .project-link  {
@@ -152,8 +160,8 @@ width: 50%;
 }
 
 .project-tile img {
-  width: 50%;
-  /* height: 82px; */
+  width: 391px;
+  height: 220px;
   /* flex-grow: 0; */
   /* align-self: center; */
 }
@@ -168,14 +176,46 @@ width: 50%;
 color: white;
 z-index: 10;
 }
+#contact .btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #0c5196;
+  border: none;
+  border-radius: 5px;
+  z-index: 10;
+}
 
+#contact .btn:hover {
+  opacity: 0.6;
+}
 .welcome .btn {
   cursor: pointer;
   display: inline-block;
   padding: 10px 30px;
   color: #fff;
-  background-color: #28a745;
+  background-color: #0c5196;
   border: none;
   border-radius: 5px;
   z-index: 10;
+}
+
+@media (max-width: 1560px) {
+  #projects {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width: 800px) {
+  #projects {
+    grid-template-columns: repeat(1,1fr);
+  }
+  .project-tile img {
+    width: 391px;
+  }
+  .project-tile a  {
+    background-color: royalblue;
+    width: 391px;
+    text-align: center;
+     }
 }
