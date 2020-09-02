@@ -2,23 +2,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-size: 105%; */
   font-family: Arial, Helvetica, sans-serif
 }
+
 html,
 body {
   line-height: 1.7em;
-  /* max-width: 1850px; */
   min-width: 300px;
 }
+
 h1,
 h2,
 h3 {
   padding-bottom: 20px;
 }
+
 a {
   text-decoration: none;
 }
+
+/* Navbar */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -29,10 +33,12 @@ a {
   justify-content: space-between;
   z-index: 11;
 }
+
 .navbar a {
   color: #fff;
   padding: 10px 20px;
 }
+
 .navbar h1 {
   /* float: left; */
   padding-top: 20px;
@@ -42,20 +48,55 @@ a {
   display: flex;
   list-style: none;
 }
+
 .navbar a:hover {
   border-bottom: 2px solid #90afc5;
   
 }
-.navbar li {
-  /* height: 60px; */
+
+/* welcome section */
+
+#welcome-section {
+  background: url(./road.jpg) no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-/* #about {
-    background-color: gray;
-    border-bottom: 1px solid black;
-    display: flex;
-    grid-template-columns: 1fr;
-  }*/
+#welcome-section::before {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+
+#welcome-section h1,h2 {
+  color: white;
+  z-index: 10;
+  }
+  
+  #welcome-section .btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #336b87;
+    border: none;
+    border-radius: 5px;
+    z-index: 10;
+  }
+
+  #welcome-section a:hover {
+    opacity: 0.8;
+  }
+
+/* projects section */
+
 #projects {
       display: grid;
       row-gap: 2em;
@@ -64,10 +105,44 @@ a {
     padding-top: 50px;
     padding-bottom: 50px;
 grid-template-columns: repeat(4,1fr);
-
-  justify-items: center;
-  
+  justify-items: center;  
   }
+
+  .project-tile {
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* position: relative; */
+    /* width: 50%; */
+  }
+  
+  .project-tile a  {
+  background-color: #336b87;
+  width: 391px;
+  text-align: center;
+  color: white;
+   }
+  
+  .project-link  {
+    /* text-align: center; */
+    width: auto;
+    display: flex;
+    background-color: royalblue;
+  }
+  
+  .project-tile img {
+    width: 391px;
+    height: 220px;
+    
+  }
+
+  .project-tile:hover {
+    opacity: 0.6;
+  }
+
+/* contact section */
 
  #contact {
     background-color: #763626;
@@ -81,101 +156,41 @@ grid-template-columns: repeat(4,1fr);
     align-items: center;
     flex-direction: column;
     justify-content: center;
-  } 
+  }
 
+  #contact h1 {
+    font-size: 3em;
+    color: white;
+   
+  }
 
-#welcome-section {
-  background: url(./road.jpg) no-repeat center center/cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-#welcome-section::before {
-  background: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: '';
-}
-/* .project-tile img{
-  width: 50%;
-  height: 82px;
+  #contact .btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #336b87;
+    border: none;
+    border-radius: 5px;
+    z-index: 10;
+    
+  }
   
-} */
+  #contact a:hover {
+    background-color: #90afc5;
+  }
 
-.project-tile {
-  display: flex;
-  flex-direction: column;
-justify-content: center;
-  align-items: center;
-  align-content: center;
-  /* position: relative; */
-  /* width: 50%; */
-}
+  span {
+    margin-right: 5px;
+  }
+  
+  .btn-group {
+    font-size: 22px;
+    margin-top: 50px;
+  }
 
-.project-tile a  {
-background-color: #336b87;
-width: 391px;
-text-align: center;
-color: white;
- }
+/* footer */
 
-.project-link  {
-  /* text-align: center; */
-  width: auto;
-  display: flex;
-  background-color: royalblue;
-}
-
-.project-tile img {
-  width: 391px;
-  height: 220px;
-  /* flex-grow: 0; */
-  /* align-self: center; */
-}
-.project-tile:hover {
-  opacity: 0.6;
-}
-
-/* .project-tile a {
-  text-align: center;
-} */
-#welcome-section h1,h2 {
-color: white;
-z-index: 10;
-}
-#contact .btn {
-  cursor: pointer;
-  display: inline-block;
-  padding: 10px 30px;
-  color: #fff;
-  background-color: #336b87;
-  border: none;
-  border-radius: 5px;
-  z-index: 10;
-  fo
-}
-
-#contact a:hover {
-  background-color: #90afc5;
-}
-#welcome-section .btn {
-  cursor: pointer;
-  display: inline-block;
-  padding: 10px 30px;
-  color: #fff;
-  background-color: #336b87;
-  border: none;
-  border-radius: 5px;
-  z-index: 10;
-}
-#welcome-section a:hover {
-  opacity: 0.8;
-}
 #footer {
   background-color: #336b87;
   display: flex;
@@ -196,6 +211,8 @@ z-index: 10;
 color: white;
 }
 
+/* media queries */
+
 @media (max-width: 1560px) {
   #projects {
     grid-template-columns: repeat(2,1fr);
@@ -213,18 +230,4 @@ color: white;
     width: 391px;
     text-align: center;
      }
-}
-span {
-  margin-right: 5px;
-}
-
-.btn-group {
-  font-size: 22px;
-  margin-top: 50px;
-}
-
-#contact h1 {
-  font-size: 3em;
-  color: white;
- 
 }
