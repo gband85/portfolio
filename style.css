@@ -63,6 +63,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
 }
 
 #welcome-section::before {
@@ -93,6 +94,15 @@ a {
 
   #welcome-section a:hover {
     opacity: 0.8;
+  }
+
+  #welcome-section h1 {
+    font-size: 4em;
+    margin-bottom: 30px;
+  }
+
+  #welcome-section h2 {
+    font-size: 2em;
   }
 
 /* projects section */
