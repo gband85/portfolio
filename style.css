@@ -27,17 +27,18 @@ a {
   display: flex;
   align-items: center;
   background: #336b87;
-  position: fixed;
+  position: relative;
   height: 60px;
   width: 100%;
   justify-content: space-between;
-  z-index: 11;
+  z-index: 12;
 }
 
 .navbar a {
   color: #fff;
   padding: 10px 20px;
 }
+
 
 .navbar h1 {
   /* float: left; */
@@ -49,7 +50,7 @@ a {
   list-style: none;
 }
 
-.navbar a:hover {
+.navbar ul li a:hover, .navbar ul li a.current {
   border-bottom: 2px solid #90afc5;
   
 }
@@ -71,7 +72,7 @@ a {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 0;
+  top: 60;
   left: 0;
   content: '';
 }
@@ -107,18 +108,35 @@ a {
 
 /* projects section */
 
-#projects {
-      display: grid;
-      row-gap: 2em;
+#project-nav {
+  display: flex;
+  background-color: #336b87;
+   text-align: center;
+   height: 50px;
+   justify-content: center;
+   align-items: center;
+}
+
+.projects-section {
+      display: flex;
+      
     background-color: #2a3132;
     /* border-bottom: 1px solid black; */
     padding-top: 50px;
     padding-bottom: 50px;
 grid-template-columns: repeat(4,1fr);
   justify-items: center;  
+  flex-direction: column;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 2em;
   }
 
   .project-tile {
+  opacity: 0.9;
     display: flex;
     flex-direction: column;
   justify-content: center;
@@ -126,6 +144,7 @@ grid-template-columns: repeat(4,1fr);
     align-content: center;
     /* position: relative; */
     /* width: 50%; */
+    /* border-radius: 1em; */
   }
   
   .project-tile a  {
@@ -133,6 +152,26 @@ grid-template-columns: repeat(4,1fr);
   width: 391px;
   text-align: center;
   color: white;
+   }
+
+   .nav-link {
+     background-color: #336b87;
+     padding: 10px 20px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     color: white;
+     background-color: transparent;
+     border: none;
+   }
+
+   .nav-link:hover {
+    background-color: white;
+    color: black;
+    }
+   .active {
+    /* border-bottom: 2px solid #90afc5; */
+    background-color: white;
+    color: black;
    }
   
   .project-link  {
@@ -149,13 +188,13 @@ grid-template-columns: repeat(4,1fr);
   }
 
   .project-tile:hover {
-    opacity: 0.6;
+    opacity: 1;
   }
 
 /* contact section */
 
  #contact {
-    background-color: #763626;
+    background-color: #2a3132;
     display: flex;
      margin-left: auto;
     margin-right: auto; 
@@ -166,6 +205,8 @@ grid-template-columns: repeat(4,1fr);
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
   }
 
   #contact h1 {
@@ -180,6 +221,7 @@ grid-template-columns: repeat(4,1fr);
     padding: 10px 30px;
     color: #fff;
     background-color: #336b87;
+    opacity: 0.9;
     border: none;
     border-radius: 5px;
     z-index: 10;
@@ -187,7 +229,7 @@ grid-template-columns: repeat(4,1fr);
   }
   
   #contact a:hover {
-    background-color: #90afc5;
+    opacity: 1;
   }
 
   span {
@@ -221,22 +263,27 @@ grid-template-columns: repeat(4,1fr);
 color: white;
 }
 
+
+.responsive {
+  /* display: none; */
+}
+
 /* media queries */
 
 @media (max-width: 1560px) {
-  #projects {
+  .projects {
     grid-template-columns: repeat(2,1fr);
   }
 }
 @media (max-width: 800px) {
-  #projects {
+  .project-grid {
     grid-template-columns: repeat(1,1fr);
   }
   .project-tile img {
     width: 391px;
   }
   .project-tile a  {
-    background-color: royalblue;
+    /* background-color: royalblue; */
     width: 391px;
     text-align: center;
      }
