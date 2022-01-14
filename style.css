@@ -20,7 +20,7 @@
     z-index: 3;
 }
 .fade-in {
-  animation: fadeIn ease 0.5s;
+  animation: fadeIn ease 0.8s;
 }
 @keyframes fadeIn {
   0% {
@@ -31,13 +31,13 @@
   }
 }
 .fade-out {
-  animation: fadeOut ease 0.5s;
+  animation: fadeOut ease 0.8s;
 }
 @keyframes fadeOut {
-  100% {
+  0% {
     opacity:1;
   }
-  0% {
+  100% {
     opacity:0;
   }
 }
