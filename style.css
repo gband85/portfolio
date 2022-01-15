@@ -1,5 +1,4 @@
 #hero {
-  /* max-width: 42em; */
   height: 100vh;
   background: url(./img/road.jpg) no-repeat center center/cover;
 }
@@ -8,14 +7,8 @@
     background-color: black;
 }
 .card-img-overlay {
-    /* z-index: 5; */
     opacity: 0;
-   /* visibility: hidden; */
-   /* display: none; */
 }
-/* .card-img-overlay:hover {
-    /* display: block; 
-} */
 #img1 {
     z-index: 3;
 }
