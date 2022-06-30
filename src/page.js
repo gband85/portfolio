@@ -1,3 +1,5 @@
+import './page.css'
+
 const page = () => {
     const hero = document.createElement("div");
     hero.className = "hero";
