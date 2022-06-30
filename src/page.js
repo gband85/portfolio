@@ -1,9 +1,9 @@
-import './page.css'
+import "./page.css";
 
 const page = () => {
-    const hero = document.createElement("div");
-    hero.className = "hero";
-    hero.innerHTML = `<div class="hero__text">
+  const hero = document.createElement("div");
+  hero.className = "hero";
+  hero.innerHTML = `<div class="hero__text">
     <h1 class="">Garrett Anderson</h1>
     <h2 class="">Developer</h2>
   </div>`;
@@ -11,10 +11,10 @@ const page = () => {
   container.className = "container";
   container.innerHTML = `
   <div class="projects my-5" id="projects-section">
-  <div class="container">
+    <div>
     <h1 class="my-5 text-center">Work</h1>
-    <div class="row row-cols-2 g-5">
-      <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+    </div>
+  <div class="project-cards">     
         <div class="card h-100">
           <img src="img/tribute.png" class="card-img">
           <a href="projects/tribute">
@@ -23,18 +23,14 @@ const page = () => {
             </div>
           </a>
         </div>
-      </div>
-      <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-        <div class="card h-100">
+              <div class="card h-100">
           <img src="img/survey.png" class="card-img">
           <a href="projects/survey">
             <div class="card-img-overlay bg-dark text-white d-flex align-items-center justify-content-center">
               <h5 class="card-title">Survey</h5>
             </div>
           </a>
-        </div>
-      </div>
-      <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+        </div>      
         <div class="card h-100">
           <img src="img/product.png" class="card-img">
           <a href="/projects/product">
@@ -42,9 +38,7 @@ const page = () => {
               <h5 class="card-title">Product Page</h5>
             </div>
           </a>
-        </div>
-      </div>
-      <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+        </div>      
         <div class="card h-100">
           <img src="img/doc.png" class="card-img">
           <a href="/projects/doc">
@@ -53,8 +47,6 @@ const page = () => {
             </div>
           </a>
         </div>
-      </div>
-      <div class="col-12 col-sm-12 col-md-12 col-lg-6">
         <div class="card h-100">
           <img src="img/quotes.png" class="card-img">
           <a href="/projects/quotes">
@@ -63,8 +55,6 @@ const page = () => {
             </div>
           </a>
         </div>
-      </div>
-      <div class="col-12 col-sm-12 col-md-12 col-lg-6">
         <div class="card h-100">
           <img src="img/markdown.png" class="card-img">
           <a href="/projects/markdown">
@@ -73,8 +63,6 @@ const page = () => {
             </div>
           </a>
         </div>
-      </div>
-      <div class="col-12 col-sm-12 col-md-12 col-lg-6">
         <div class="card h-100">
           <img src="img/drum-machine.png" class="card-img">
           <a href="/projects/drummachine">
@@ -83,8 +71,6 @@ const page = () => {
             </div>
           </a>
         </div>
-      </div>
-      <div class="col-12 col-sm-12 col-md-12 col-lg-6">
         <div class="card h-100">
           <img src="img/calculator.png" class="card-img">
           <a href="/projects/calculator-js">
@@ -94,8 +80,6 @@ const page = () => {
           </a>
         </div>
       </div>
-
-      <div class="col-12 col-sm-12 col-md-12 col-lg-6">
         <div class="card h-100">
           <img src="img/clock.png" class="card-img">
           <a href="/projects/clock-js">
@@ -104,8 +88,6 @@ const page = () => {
             </div>
           </a>
         </div>
-      </div>
-      <div class="col-12 col-sm-12 col-md-12 col-lg-6">
         <div class="card h-100">
           <img src="img/weather.png" class="card-img">
           <a href="/projects/weather">
@@ -114,8 +96,6 @@ const page = () => {
             </div>
           </a>
         </div>
-      </div>
-      <div class="col-12 col-sm-12 col-md-12 col-lg-6">
         <div class="card h-100">
           <img src="img/wikipedia.png" class="card-img">
           <a href="/projects/wikipedia/">
@@ -124,8 +104,6 @@ const page = () => {
             </div>
           </a>
         </div>
-      </div>
-      <div class="col-12 col-sm-12 col-md-12 col-lg-6">
         <div class="card h-100">
           <img src="img/landing_page.png" class="card-img">
           <a href="/projects/landing_page/">
@@ -134,8 +112,6 @@ const page = () => {
             </div>
           </a>
         </div>
-      </div>
-      <div class="col-12 col-sm-12 col-md-12 col-lg-6">
         <div class="card h-100">
           <img src="img/restaurant.png" class="card-img">
           <a href="/projects/restaurant/">
@@ -144,8 +120,6 @@ const page = () => {
             </div>
           </a>
         </div>
-      </div>
-      <div class="col-12 col-sm-12 col-md-12 col-lg-6">
         <div class="card h-100">
           <img src="img/sign_up_form.jpg" class="card-img">
           <a href="/projects/sign_up_form/">
@@ -155,10 +129,9 @@ const page = () => {
           </a>
         </div>
       </div>
-    </div>
   </div>
 </div>
-  `
-return {hero,container}
-}
-export {page}
+  `;
+  return { hero, container };
+};
+export { page };
