@@ -30,7 +30,7 @@ const page = () => {
     </div>
   <div class="project-cards">     
         <div class="card h-100">
-          <img src="img/tribute.png" class="card-img">
+          <img src="${images["tribute.png"]}" class="card-img">
           <a href="projects/tribute">
             <div class="card-img-overlay bg-dark text-white d-flex align-items-center justify-content-center">
               <h5 class="card-title">Tribute Page</h5>
@@ -38,7 +38,7 @@ const page = () => {
           </a>
         </div>
               <div class="card h-100">
-          <img src="img/survey.png" class="card-img">
+          <img src="${images["survey.png"]}" class="card-img">
           <a href="projects/survey">
             <div class="card-img-overlay bg-dark text-white d-flex align-items-center justify-content-center">
               <h5 class="card-title">Survey</h5>
@@ -46,7 +46,7 @@ const page = () => {
           </a>
         </div>      
         <div class="card h-100">
-          <img src="img/product.png" class="card-img">
+          <img src="${images["product.png"]}" class="card-img">
           <a href="/projects/product">
             <div class="card-img-overlay bg-dark text-white d-flex align-items-center justify-content-center">
               <h5 class="card-title">Product Page</h5>
@@ -54,7 +54,7 @@ const page = () => {
           </a>
         </div>      
         <div class="card h-100">
-          <img src="img/doc.png" class="card-img">
+          <img src="${images["doc.png"]}" class="card-img">
           <a href="/projects/doc">
             <div class="card-img-overlay bg-dark text-white d-flex align-items-center justify-content-center">
               <h5 class="card-title">Documentation Viewer</h5>
@@ -62,7 +62,7 @@ const page = () => {
           </a>
         </div>
         <div class="card h-100">
-          <img src="img/quotes.png" class="card-img">
+          <img src="${images["quotes.png"]}" class="card-img">
           <a href="/projects/quotes">
             <div class="card-img-overlay bg-dark text-white d-flex align-items-center justify-content-center">
               <h5 class="card-title">Random Quote Machine</h5>
@@ -70,7 +70,7 @@ const page = () => {
           </a>
         </div>
         <div class="card h-100">
-          <img src="img/markdown.png" class="card-img">
+          <img src="${images["markdown.png"]}" class="card-img">
           <a href="/projects/markdown">
             <div class="card-img-overlay bg-dark text-white d-flex align-items-center justify-content-center">
               <h5 class="card-title">Markdown Previewer</h5>
@@ -78,7 +78,7 @@ const page = () => {
           </a>
         </div>
         <div class="card h-100">
-          <img src="img/drum-machine.png" class="card-img">
+          <img src="${images["drum-machine.png"]}" class="card-img">
           <a href="/projects/drummachine">
             <div class="card-img-overlay bg-dark text-white d-flex align-items-center justify-content-center">
               <h5 class="card-title">Drum Machine</h5>
@@ -86,7 +86,7 @@ const page = () => {
           </a>
         </div>
         <div class="card h-100">
-          <img src="img/calculator.png" class="card-img">
+          <img src="${images["calculator.png"]}" class="card-img">
           <a href="/projects/calculator-js">
             <div class="card-img-overlay bg-dark text-white d-flex align-items-center justify-content-center">
               <h5 class="card-title">Calculator</h5>
@@ -95,7 +95,7 @@ const page = () => {
         </div>
       </div>
         <div class="card h-100">
-          <img src="img/clock.png" class="card-img">
+          <img src="${images["clock.png"]}" class="card-img">
           <a href="/projects/clock-js">
             <div class="card-img-overlay bg-dark text-white d-flex align-items-center justify-content-center">
               <h5 class="card-title">Pomodoro Clock</h5>
@@ -103,7 +103,7 @@ const page = () => {
           </a>
         </div>
         <div class="card h-100">
-          <img src="img/weather.png" class="card-img">
+          <img src="${images["weather.png"]}" class="card-img">
           <a href="/projects/weather">
             <div class="card-img-overlay bg-dark text-white d-flex align-items-center justify-content-center">
               <h5 class="card-title">Local Weather</h5>
@@ -111,7 +111,7 @@ const page = () => {
           </a>
         </div>
         <div class="card h-100">
-          <img src="img/wikipedia.png" class="card-img">
+          <img src="${images["wikipedia.png"]}" class="card-img">
           <a href="/projects/wikipedia/">
             <div class="card-img-overlay bg-dark text-white d-flex align-items-center justify-content-center">
               <h5 class="card-title">Wikipedia Search</h5>
@@ -119,7 +119,7 @@ const page = () => {
           </a>
         </div>
         <div class="card h-100">
-          <img src="img/landing_page.png" class="card-img">
+          <img src="${images["landing_page.png"]}" class="card-img">
           <a href="/projects/landing_page/">
             <div class="card-img-overlay bg-dark text-white d-flex align-items-center justify-content-center">
               <h5 class="card-title">Landing Page</h5>
@@ -127,7 +127,7 @@ const page = () => {
           </a>
         </div>
         <div class="card h-100">
-          <img src="img/restaurant.png" class="card-img">
+          <img src="${images["restaurant.png"]}" class="card-img">
           <a href="/projects/restaurant/">
             <div class="card-img-overlay bg-dark text-white d-flex align-items-center justify-content-center">
               <h5 class="card-title">Restaurant Site</h5>
@@ -135,7 +135,7 @@ const page = () => {
           </a>
         </div>
         <div class="card h-100">
-          <img src="img/sign_up_form.jpg" class="card-img">
+          <img src="${images["sign_up_form.jpg"]}" class="card-img">
           <a href="/projects/sign_up_form/">
             <div class="card-img-overlay bg-dark text-white d-flex align-items-center justify-content-center">
               <h5 class="card-title">Sign-up Form</h5>
