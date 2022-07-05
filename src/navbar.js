@@ -20,9 +20,6 @@ const navbar = (brandText, ...links) => {
       'button',
     );
      hamburger.classList.add('hamburger');
-    hamburger.style.width = '24px';
-    hamburger.style.height = '24px';
-    hamburger.setAttribute('viewBox', '0 0 24 24');
     hamburger.appendChild();
     navButtons.appendChild(brand);
     navButtons.appendChild(hamburger);
