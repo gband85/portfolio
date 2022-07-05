@@ -33,7 +33,13 @@ menu.appendChild(menu__icon);
     linksArr.map(function (item) {
       const listItem = document.createElement('li');
       listItem.className = 'menu-item';
-      listItem.innerHTML = `<a>${item}</a>`;
+      const navLink=document.createElement('a')
+      navLink.className="nav-link"
+      navLink.textContent= item;
+      navLink.addEventListener('click',function(){
+        navList.classList.toggle('show');
+      })
+      listItem.appendChild(navLink);
       navList.appendChild(listItem);
     });
     console.log(navList.firstChild)
