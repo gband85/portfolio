@@ -19,11 +19,13 @@ const navbar = (brandText, ...links) => {
     navbarBrand.innerHTML=`<a href="index.html">${brandText}</a>`;
     // const menu=document.createElement("svg")
     const menu = document.createElement(
-      'button',
-    );
-     menu.classList.add('menu');
+      'button');
+     menu.className='menu';
     // menu.appendChild();
-    
+    const menu__icon=document.createElement("i")
+// console.log(icon);
+menu__icon.classList.add("fa-solid","fa-bars","fa-2xl")
+menu.appendChild(menu__icon);
     
     const navList = document.createElement('ul');
     navList.className = 'nav-list';
