@@ -48,7 +48,7 @@ menu.appendChild(menu__icon);
     navbarUI.appendChild(navbarBrand);
     navbarUI.appendChild(navList);
     navbarUI.appendChild(menu);
-    if (window.innerWidth >= 600) {
+    if (window.innerWidth >= 768) {
       menu.style.display = 'none';
       navList.classList.remove('show');
       
@@ -57,7 +57,7 @@ menu.appendChild(menu__icon);
       navList.classList.add('show');
           }
     window.addEventListener('resize', function () {
-      if (window.innerWidth >= 600) {
+      if (window.innerWidth >= 768) {
         menu.style.display = 'none';
         navList.classList.remove('show');
                        } else {
