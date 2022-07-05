@@ -44,37 +44,29 @@ menu.appendChild(menu__icon);
     navbarUI.appendChild(menu);
     if (window.innerWidth >= 600) {
       menu.style.display = 'none';
-      navList.classList.add('desktop');
       navList.classList.remove('show');
-      navbarUI.style.backgroundColor = 'black';
+      
           } else {
       menu.style.display = 'inline';
-      navList.classList.remove('desktop');
       navList.classList.add('show');
-      navbarUI.style.backgroundColor = 'unset';
           }
     window.addEventListener('resize', function () {
       if (window.innerWidth >= 600) {
         menu.style.display = 'none';
-        navList.classList.remove('hide');
-        navList.classList.add('desktop');
-        //navList.style.display = "flex";
-        navbarUI.style.backgroundColor = 'black';
-              } else {
+        navList.classList.remove('show');
+                       } else {
         menu.style.display = 'inline';
-        //unset transition, hide menu,set transition
+        //unset transition, show menu,set transition
         navList.style.transition = 'unset';
         setTimeout(function () {
-          navList.style.transition = 'all .5s ease-in-out';
+          navList.style.transition = 'all .8s ease-in-out';
         }, 100);
-        navList.classList.add('hide');
-        navList.classList.remove('desktop');
-        navbarUI.style.backgroundColor = 'unset';
-        
+        navList.classList.add('show');
+                
       }
     });
     menu.addEventListener('click', function () {
-      navList.classList.toggle('hide');
+      navList.classList.toggle('show');
     });
    // document.body.appendChild(navbarUI);
     return navbarUI;
