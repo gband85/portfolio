@@ -1,4 +1,4 @@
-import './navbar.css';
+import './css/navbar.css';
 
 const navbar = (brandText, ...links) => {
   //accept any args
@@ -14,14 +14,14 @@ const navbar = (brandText, ...links) => {
     brand.className = 'logo';
     brand.href = 'index.html';
     brand.textContent = brandText;
-    // const hamburger=document.createElement("svg")
-    const hamburger = document.createElement(
+    // const menu=document.createElement("svg")
+    const menu = document.createElement(
       'button',
     );
-     hamburger.classList.add('hamburger');
-    hamburger.appendChild();
-    navbarUI.appendChild(brand);
-    navbarUI.appendChild(hamburger);
+     menu.classList.add('menu');
+    // menu.appendChild();
+    
+    
     const navList = document.createElement('ul');
     navList.className = 'nav-list';
     //iterate through args,create li with button with arg
@@ -34,31 +34,29 @@ const navbar = (brandText, ...links) => {
     console.log(navList.firstChild)
     navList.firstChild.firstChild.href="index.html"
     navList.firstChild.nextSibling.firstChild.href="index.html#projects-section"
-    navbarUI.appendChild(navButtons);
+    navbarUI.appendChild(brand);
     navbarUI.appendChild(navList);
+    navbarUI.appendChild(menu);
     if (window.innerWidth >= 600) {
-      hamburger.style.display = 'none';
+      menu.style.display = 'none';
       navList.classList.add('desktop');
       navList.classList.remove('hide');
       navbarUI.style.backgroundColor = 'black';
-      navButtons.style.backgroundColor = 'unset';
-    } else {
-      hamburger.style.display = 'inline';
+          } else {
+      menu.style.display = 'inline';
       navList.classList.remove('desktop');
       navList.classList.add('hide');
       navbarUI.style.backgroundColor = 'unset';
-      navButtons.style.backgroundColor = 'black';
-    }
+          }
     window.addEventListener('resize', function () {
       if (window.innerWidth >= 600) {
-        hamburger.style.display = 'none';
+        menu.style.display = 'none';
         navList.classList.remove('hide');
         navList.classList.add('desktop');
         //navList.style.display = "flex";
         navbarUI.style.backgroundColor = 'black';
-        navButtons.style.backgroundColor = 'unset';
-      } else {
-        hamburger.style.display = 'inline';
+              } else {
+        menu.style.display = 'inline';
         //unset transition, hide menu,set transition
         navList.style.transition = 'unset';
         setTimeout(function () {
@@ -67,10 +65,10 @@ const navbar = (brandText, ...links) => {
         navList.classList.add('hide');
         navList.classList.remove('desktop');
         navbarUI.style.backgroundColor = 'unset';
-        navButtons.style.backgroundColor = 'black';
+        
       }
     });
-    hamburger.addEventListener('click', function () {
+    menu.addEventListener('click', function () {
       navList.classList.toggle('hide');
     });
    // document.body.appendChild(navbarUI);
