@@ -65,7 +65,7 @@ menu.appendChild(menu__icon);
         //unset transition, show menu,set transition
         navList.style.transition = 'unset';
         setTimeout(function () {
-          navList.style.transition = 'all .8s ease-in-out';
+          navList.style.transition = 'transform .8s ease-in-out';
         }, 100);
         navList.classList.add('show');
                 
