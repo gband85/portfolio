@@ -16,9 +16,8 @@ const navbar = (brandText, ...links) => {
     brand.href = 'index.html';
     brand.textContent = brandText;
     // const hamburger=document.createElement("svg")
-    const hamburger = document.createElementNS(
-      'http://www.w3.org/2000/svg',
-      'svg',
+    const hamburger = document.createElement(
+      'button',
     );
     const hamburgerPath = document.createElementNS(
       'http://www.w3.org/2000/svg',
