@@ -53,7 +53,7 @@ menu.appendChild(menu__icon);
       navList.classList.remove('show');
       
           } else {
-      menu.style.display = 'inline';
+      menu.style.display = 'inline-block';
       navList.classList.add('show');
           }
     window.addEventListener('resize', function () {
@@ -61,7 +61,7 @@ menu.appendChild(menu__icon);
         menu.style.display = 'none';
         navList.classList.remove('show');
                        } else {
-        menu.style.display = 'inline';
+        menu.style.display = 'inline-block';
         //unset transition, show menu,set transition
         navList.style.transition = 'unset';
         setTimeout(function () {
