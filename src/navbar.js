@@ -10,10 +10,10 @@ const navbar = (brandText, ...links) => {
     navbarUI.className = 'navbar';
     //create navbuttons
   
-    const brand = document.createElement('a');
-    brand.className = 'logo';
-    brand.href = 'index.html';
-    brand.textContent = brandText;
+    const navbarBrand = document.createElement('h1');
+    navbarBrand.className="navbar__brand"
+    // navButtons.className = 'nav-buttons';
+    navbarBrand.innerHTML=`<a href="index.html">${brandText}</a>`;
     // const menu=document.createElement("svg")
     const menu = document.createElement(
       'button',
@@ -34,7 +34,7 @@ const navbar = (brandText, ...links) => {
     console.log(navList.firstChild)
     navList.firstChild.firstChild.href="index.html"
     navList.firstChild.nextSibling.firstChild.href="index.html#projects-section"
-    navbarUI.appendChild(brand);
+    navbarUI.appendChild(navbarBrand);
     navbarUI.appendChild(navList);
     navbarUI.appendChild(menu);
     if (window.innerWidth >= 600) {
