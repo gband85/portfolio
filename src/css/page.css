@@ -2,26 +2,31 @@
     margin: 0;
     padding: 0;
 }
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
+html,body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .card__img {
     width: 100%;
     /* opacity: 1; */
     /* backface-visibility: hidden; */
+    z-index: 3;
+    object-fit: cover;
 }
 .card a:visited {
 color: white;
 }
+/* .card a {
+    height: 100%;
+} */
 .card {
     position: relative;
-    /* width: 300px; */
-    /* display: flex;
-    justify-content: center; */
+    max-width: 720px;
+     display: flex;
+   /* justify-content: center; */
     /* height: 200px; */
     /* z-index: 3; */
+    /* margin:  10px; */
 
 }
 /* .card:after {
@@ -66,6 +71,7 @@ color: white;
     /* z-index: 4; */
     transform: translate(-50%, -50%);
     pointer-events: none;
+    z-index: 5;
 }
 .card__link:visited {
 color: white;
@@ -78,25 +84,27 @@ color: white;
     /* flex-wrap: wrap; */
     grid-template-columns: 1fr;
     /* max-width: 500px; */
+    z-index: 8;
     /* justify-content: space-between; */
 column-gap: 50px;
+margin: 10px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     .project-cards {
       grid-template-columns: repeat(2, minmax(200px,1fr));
     }
   }
   
-  /* @media screen and (min-width: 950px) {
+  @media screen and (min-width: 1025px) {
     .project-cards {
       grid-template-columns: repeat(3, 1fr);
     }
-  } */
-  @media screen and (min-width: 1200px) {
+  }
+  /* @media screen and (min-width: 1200px) {
     .project-cards {
       grid-template-columns: repeat(3, minmax(200px,1fr));
     }
-  }
+  } */
   
 /* .card:hover .card__img {
     opacity: 0.4;
@@ -109,7 +117,7 @@ column-gap: 50px;
 }
 .hero {
     height: 100vh;
-    background: url(./images/road.jpg) no-repeat center center/cover;
+    /* background: url(./images/road.jpg) no-repeat center center/cover; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,6 +125,14 @@ column-gap: 50px;
   }
   .hero__text  {
     color: white;
+  }
+  .hero__title {
+  font-size: calc(1.425rem + 2.1vw);
+  }
+  .hero__subtitle {
+    font-weight: 400;
+    text-align: center;
+    font-size: calc(1.375rem + 1.5vw);
   }
   .container {
     display: flex;
