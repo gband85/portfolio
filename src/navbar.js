@@ -48,26 +48,26 @@ menu.appendChild(menu__icon);
     navbarUI.appendChild(navbarBrand);
     navbarUI.appendChild(navList);
     navbarUI.appendChild(menu);
-    if (window.innerWidth >= 768) {
+    if (window.innerWidth >= 769) {
       menu.style.display = 'none';
-      navList.classList.remove('show');
+      // navList.classList.remove('show');
       
           } else {
       menu.style.display = 'inline-block';
-      navList.classList.add('show');
+      // navList.classList.add('show');
           }
     window.addEventListener('resize', function () {
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth >= 769) {
         menu.style.display = 'none';
-        navList.classList.remove('show');
+        // navList.classList.remove('show');
                        } else {
         menu.style.display = 'inline-block';
         //unset transition, show menu,set transition
-        navList.style.transition = 'unset';
+        navList.style.transition = 'none';
         setTimeout(function () {
           navList.style.transition = 'transform .8s ease-in-out';
         }, 100);
-        navList.classList.add('show');
+        // navList.classList.add('show');
                 
       }
     });
