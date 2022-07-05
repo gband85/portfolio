@@ -1,3 +1,6 @@
+import '@fortawesome/fontawesome-free/js/solid'
+import '@fortawesome/fontawesome-free/js/fontawesome'
+
 import './css/navbar.css';
 
 const navbar = (brandText, ...links) => {
