@@ -45,12 +45,12 @@ menu.appendChild(menu__icon);
     if (window.innerWidth >= 600) {
       menu.style.display = 'none';
       navList.classList.add('desktop');
-      navList.classList.remove('hide');
+      navList.classList.remove('show');
       navbarUI.style.backgroundColor = 'black';
           } else {
       menu.style.display = 'inline';
       navList.classList.remove('desktop');
-      navList.classList.add('hide');
+      navList.classList.add('show');
       navbarUI.style.backgroundColor = 'unset';
           }
     window.addEventListener('resize', function () {
