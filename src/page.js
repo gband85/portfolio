@@ -24,8 +24,8 @@ const page = () => {
   const container = document.createElement("div");
   container.className = "container";
   container.innerHTML = `
-  <div class="projects my-5" id="projects-section">
-    <div>
+  <div class="" id="projects-section">
+    <div class="projects-title">
     <h1 class="my-5 text-center">Work</h1>
     </div>
   <div class="project-cards">     
@@ -157,6 +157,20 @@ const page = () => {
         </div>
       </div>
   </div>
+  <div class="contact-section" id="contact-section">
+  <div class="contact-title">
+<h1 class="">Contact Me</h1>
+  </div>
+<div class="contact">
+
+  <a href="https://github.com/gband85" class="btn btn-primary" target="_blank"><span><i
+        class="fab fa-github"></i></span>Github</a>
+  <a href="https://www.linkedin.com/in/garrettanderson85/" class="btn btn-primary"
+    target="_blank"><span><i class="fab fa-linkedin"></i></span>LinkedIn</a>
+  <a href="https://www.freecodecamp.org/gband85" id="profile-link" class="btn btn-primary"
+    target="_blank"><span><i class="fab fa-free-code-camp"></i></span>FCC</a>
+</div>
+</div>
 </div>
   `;
   return { hero, container };
