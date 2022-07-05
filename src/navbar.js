@@ -9,8 +9,7 @@ const navbar = (brandText, ...links) => {
     const navbarUI = document.createElement('nav');
     navbarUI.className = 'navbar';
     //create navbuttons
-    const navButtons = document.createElement('div');
-    navButtons.className = 'nav-buttons';
+  
     const brand = document.createElement('a');
     brand.className = 'logo';
     brand.href = 'index.html';
@@ -21,8 +20,8 @@ const navbar = (brandText, ...links) => {
     );
      hamburger.classList.add('hamburger');
     hamburger.appendChild();
-    navButtons.appendChild(brand);
-    navButtons.appendChild(hamburger);
+    navbarUI.appendChild(brand);
+    navbarUI.appendChild(hamburger);
     const navList = document.createElement('ul');
     navList.className = 'nav-list';
     //iterate through args,create li with button with arg
