@@ -43,8 +43,9 @@ menu.appendChild(menu__icon);
       navList.appendChild(listItem);
     });
     console.log(navList.firstChild)
-    navList.firstChild.firstChild.href="index.html"
+    navList.firstChild.firstChild.href="index.html#navbar"
     navList.firstChild.nextSibling.firstChild.href="index.html#projects-section"
+    navList.firstChild.nextSibling.nextSibling.firstChild.href="index.html#projects-section"
     navbarUI.appendChild(navbarBrand);
     navbarUI.appendChild(navList);
     navbarUI.appendChild(menu);
@@ -67,7 +68,7 @@ menu.appendChild(menu__icon);
         setTimeout(function () {
           navList.style.transition = 'transform .8s ease-in-out';
         }, 100);
-        // navList.classList.add('show');
+        navList.classList.remove('show');
                 
       }
     });
