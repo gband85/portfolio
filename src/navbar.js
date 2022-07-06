@@ -2,6 +2,7 @@ import '@fortawesome/fontawesome-free/js/solid'
 import '@fortawesome/fontawesome-free/js/fontawesome'
 
 import './css/navbar.css';
+import {overlay} from './page'
 
 const navbar = (brandText, ...links) => {
   //accept any args
@@ -38,6 +39,7 @@ menu.appendChild(menu__icon);
       navLink.textContent= item;
       navLink.addEventListener('click',function(){
         navList.classList.toggle('show');
+        document.body.querySelector('.overlay').style.display="none";
       })
       listItem.appendChild(navLink);
       navList.appendChild(listItem);
@@ -45,7 +47,7 @@ menu.appendChild(menu__icon);
     console.log(navList.firstChild)
     navList.firstChild.firstChild.href="index.html#navbar"
     navList.firstChild.nextSibling.firstChild.href="index.html#projects-section"
-    navList.firstChild.nextSibling.nextSibling.firstChild.href="index.html#projects-section"
+    navList.firstChild.nextSibling.nextSibling.firstChild.href="index.html#contact-section"
     navbarUI.appendChild(navbarBrand);
     navbarUI.appendChild(navList);
     navbarUI.appendChild(menu);
@@ -74,6 +76,7 @@ menu.appendChild(menu__icon);
     });
     menu.addEventListener('click', function () {
       navList.classList.toggle('show');
+      document.body.querySelector('.overlay').style.display="block"
     });
    // document.body.appendChild(navbarUI);
     return navbarUI;
