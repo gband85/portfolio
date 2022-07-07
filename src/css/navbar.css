@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-.navmenu {
+.nav__menu {
   background-color: #222222;
   width: 40%;
   transition: transform .8s; 
@@ -14,7 +14,7 @@
   z-index: 54;
   height: calc(100% - 83px);
 }
-.navmenu__list {
+.nav__menu__list {
   list-style: none;
   font-size: 28px;
   /* height: 70vh; */
@@ -41,6 +41,22 @@
   .navbar>* {
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 background-color: black;
+  }
+  .navbar__brand {
+    text-decoration: none;
+    color: black;
+    /* grid-row: 1/2; */
+    font-size: 2rem;
+    color: #fff;
+    /* margin-left: 10px; */
+    /* z-index: 8; */
+  }
+  .navbar__brand a {
+    text-decoration: none;
+    font-size: 28px;
+  }
+  .navbar__brand a:visited {
+    color: white;
   }
   .navbar__nav {
     display: none;
@@ -78,57 +94,12 @@ display: block;
   display: none;
 }
   }
-  /* .nav-list li:hover {
-border-bottom: white 2px solid;
-  } */
-  .nav-list li {
-    display: flex;
-    align-items: center;
-  }
-  /* .nav-list li:first-child {
-    margin-top: 0;
-  } */
-  .nav-list a {
-    text-decoration: none;
-    /* display: block; */
-  /* background-color: black; */
-    text-align: center;
-    color: #fff;
-    border: none;
-    /* font-size: 18px; */
-    /* padding: 10px; */
-    /* margin: 0; */
-    /* height: 100%; */
-    /* font-family: "Merriweather", serif; */
-    /* z-index: 9; */
-  }
 
-  .nav-list a:hover {
-    /* background-color: #fff; */
-    /* color: black; */
-    text-decoration: underline;
-    /* border-bottom: 3px solid #ffffff; */
-  }
-  .nav-list.show {
+  .nav__menu__list.show {
     transform: translateX(0);
   }
   .navbar svg {
     color: #fff;
     /* z-index: 2000; */
   }
-  .navbar__brand {
-    text-decoration: none;
-    color: black;
-    /* grid-row: 1/2; */
-    font-size: 2rem;
-    color: #fff;
-    /* margin-left: 10px; */
-    /* z-index: 8; */
-  }
-  .navbar__brand a {
-    text-decoration: none;
-    font-size: 28px;
-  }
-  .navbar__brand a:visited {
-    color: white;
-  }
+
