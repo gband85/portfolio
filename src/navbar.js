@@ -62,4 +62,4 @@ menu__btn.appendChild(menu__icon);
   };
   return { navbar };
 };
-export { navbar };
+export { pageNav };
