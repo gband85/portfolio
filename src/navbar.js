@@ -20,17 +20,17 @@ const pageNav = (brandText, ...links) => {
       navLink.className="nav-link"
       navLink.textContent= item;
       navLink.addEventListener('click',function(){
-        navList.classList.toggle('show');
+        navMenuList.classList.toggle('show');
         document.body.querySelector('.overlay').style.display="none";
       })
       listItem.appendChild(navLink);
-      navList.appendChild(listItem);
+      navMenuList.appendChild(listItem);
     });
-    console.log(navList.firstChild)
-    navList.firstChild.firstChild.href="index.html#navbar"
-    navList.firstChild.nextSibling.firstChild.href="index.html#projects-section"
-    navList.firstChild.nextSibling.nextSibling.firstChild.href="index.html#contact-section"
-  navMenu.appendChild(navList);
+    console.log(navMenuList.firstChild)
+    navMenuList.firstChild.firstChild.href="index.html#navbar"
+    navMenuList.firstChild.nextSibling.firstChild.href="index.html#projects-section"
+    navMenuList.firstChild.nextSibling.nextSibling.firstChild.href="index.html#contact-section"
+  navMenu.appendChild(navMenuList);
   return navMenu;
     }
   const navbar = () => {
@@ -44,8 +44,8 @@ const pageNav = (brandText, ...links) => {
     const navbarNav = document.createElement('nav');
     navbarNav.className = 'navbar__nav';
     //create navbuttons
-    const navbarList = document.createElement('ul');
-    navbarList.className = 'navbar__list';
+    const navbarNavList = document.createElement('ul');
+    navbarNavList.className = 'navbar__nav__list';
     //iterate through args,create li with button with arg
     linksArr.map(function (item) {
       const listItem = document.createElement('li');
@@ -58,13 +58,13 @@ const pageNav = (brandText, ...links) => {
         document.body.querySelector('.overlay').style.display="none";
       })
       listItem.appendChild(navLink);
-      navList.appendChild(listItem);
+      navbarNavList.appendChild(listItem);
     });
-    console.log(navList.firstChild)
-    navList.firstChild.firstChild.href="index.html#navbar"
-    navList.firstChild.nextSibling.firstChild.href="index.html#projects-section"
-    navList.firstChild.nextSibling.nextSibling.firstChild.href="index.html#contact-section"
- navbarNav.appendChild(navbarList);
+    console.log(navbarNavList.firstChild)
+    navbarNavList.firstChild.firstChild.href="index.html#navbar"
+    navbarNavList.firstChild.nextSibling.firstChild.href="index.html#projects-section"
+    navbarNavList.firstChild.nextSibling.nextSibling.firstChild.href="index.html#contact-section"
+ navbarNav.appendChild(navbarNavList);
     // const menu=document.createElement("svg")
     const menu__btn = document.createElement(
       'button');
