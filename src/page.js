@@ -22,7 +22,7 @@ const page = () => {
   overlay.className="overlay"
   overlay.addEventListener('click',function() {
     overlay.style.display='none'
-    document.body.querySelector('.nav-list').classList.remove('show')
+    document.body.querySelector('.nav__menu').classList.remove('show')
   })
   const hero = document.createElement("div");
   hero.className = "hero";
