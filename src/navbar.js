@@ -9,9 +9,9 @@ const pageNav = (brandText, ...links) => {
   let linksArr = links.slice(0);
   const navMenu=() => {
     const navMenu=  document.createElement('div');
-    navMenu.className='navmenu';
+    navMenu.className='nav__menu';
     const navMenuList = document.createElement('ul');
-    navMenuList.className = 'navmenu__list';
+    navMenuList.className = 'nav__menu__list';
     //iterate through args,create li with button with arg
     linksArr.map(function (item) {
       const listItem = document.createElement('li');
@@ -79,7 +79,7 @@ menu__btn.appendChild(menu__icon);
     navbar.appendChild(navbarBrand);
     navbar.appendChild(navbarNav);
     navbar.appendChild(menu__btn);
-   navbar.querySelector('.menu__btn').addEventListener('click', function () {
+   menu__btn.addEventListener('click', function () {
     document.body.querySelector('.nav__menu').classList.toggle('show');
       document.body.querySelector('.overlay').style.display="block"
     });
