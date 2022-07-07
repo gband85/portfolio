@@ -16,18 +16,22 @@ const pageNav = (brandText, ...links) => {
     const navMenuList = document.createElement('ul');
     navMenuList.className = 'nav__menu__list';
     navMenuList.appendChild(closeMenu);
+    closeMenu.querySelector('.close__menu__btn').addEventListener('click',function(){
+      navMenu.classList.remove('show');
+      document.body.querySelector('.overlay').style.display="none";
+    })
     //iterate through args,create li with button with arg
     linksArr.map(function (item) {
       const listItem = document.createElement('li');
       listItem.className = 'menu-item';
-      const navLink=document.createElement('a')
-      navLink.className="nav-link"
-      navLink.textContent= item;
-      navLink.addEventListener('click',function(){
-        navMenuList.classList.toggle('show');
+      const navMenuLink=document.createElement('a')
+      navMenuLink.className="nav-link"
+      navMenuLink.textContent= item;
+      navMenuLink.addEventListener('click',function(){
+        navMenu.classList.remove('show');
         document.body.querySelector('.overlay').style.display="none";
       })
-      listItem.appendChild(navLink);
+      listItem.appendChild(navMenuLink);
       navMenuList.appendChild(listItem);
     });
     console.log(navMenuList.firstChild)
@@ -55,14 +59,10 @@ const pageNav = (brandText, ...links) => {
     linksArr.map(function (item) {
       const listItem = document.createElement('li');
       listItem.className = 'menu-item';
-      const navLink=document.createElement('a')
-      navLink.className="nav-link"
-      navLink.textContent= item;
-      navLink.addEventListener('click',function(){
-        navList.classList.toggle('show');
-        document.body.querySelector('.overlay').style.display="none";
-      })
-      listItem.appendChild(navLink);
+      const navbarLink=document.createElement('a')
+      navbarLink.className="nav-link"
+      navbarLink.textContent= item;
+      listItem.appendChild(navbarLink);
       navbarNavList.appendChild(listItem);
     });
     console.log(navbarNavList.firstChild)
@@ -85,8 +85,8 @@ menu__btn.appendChild(menu__icon);
     navbar.appendChild(navbarNav);
     navbar.appendChild(menu__btn);
    menu__btn.addEventListener('click', function () {
-    document.body.querySelector('.nav__menu').classList.toggle('show');
-      document.body.querySelector('.overlay').style.display="block"
+    document.body.querySelector('.nav__menu').classList.add('show');
+      document.body.querySelector('.overlay').style.display="block";
     });
    // document.body.appendChild(navbarUI);
     return navbar;
