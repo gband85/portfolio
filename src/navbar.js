@@ -10,8 +10,12 @@ const pageNav = (brandText, ...links) => {
   const navMenu=() => {
     const navMenu=  document.createElement('div');
     navMenu.className='nav__menu';
+    const closeMenu=document.createElement('li');
+    closeMenu.className='close__menu';
+    closeMenu.innerHTML=`<button class='close__menu__btn'><i class='fa-solid fa-x fa-2xl'></button>`;
     const navMenuList = document.createElement('ul');
     navMenuList.className = 'nav__menu__list';
+    navMenuList.appendChild(closeMenu);
     //iterate through args,create li with button with arg
     linksArr.map(function (item) {
       const listItem = document.createElement('li');
@@ -30,6 +34,7 @@ const pageNav = (brandText, ...links) => {
     navMenuList.firstChild.firstChild.href="index.html#navbar"
     navMenuList.firstChild.nextSibling.firstChild.href="index.html#projects-section"
     navMenuList.firstChild.nextSibling.nextSibling.firstChild.href="index.html#contact-section"
+// navMenu.appendChild(navMenuClose);
   navMenu.appendChild(navMenuList);
   return navMenu;
     }
