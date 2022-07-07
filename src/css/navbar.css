@@ -3,7 +3,29 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+.navmenu {
+  background-color: #222222;
+  width: 40%;
+  transition: transform .8s; 
+  transform: translateX(-100%);
+  /* background-color: black; */
+  top: 83px;
+  position: absolute;
+  z-index: 54;
+  height: calc(100% - 83px);
+}
+.navmenu__list {
+  list-style: none;
+  font-size: 28px;
+  /* height: 70vh; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+  /* justify-content: space-around; */
+  /* background-color: #2F4F4F; */
+}
 .navbar {
     display: flex;
     /* position: relative; */
