@@ -14,6 +14,9 @@
   z-index: 54;
   height: calc(100% - 83px);
 }
+.nav__menu.show {
+  transform: translateX(0);
+}
 .nav__menu__list {
   list-style: none;
   font-size: 28px;
@@ -95,9 +98,6 @@ display: block;
 }
   }
 
-  .nav__menu__list.show {
-    transform: translateX(0);
-  }
   .navbar svg {
     color: #fff;
     /* z-index: 2000; */
