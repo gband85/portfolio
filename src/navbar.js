@@ -77,15 +77,15 @@ menu__btn.appendChild(menu__icon);
     
 
     navbar.appendChild(navbarBrand);
-    navbar.appendChild(navList);
+    navbar.appendChild(navbarNav);
     navbar.appendChild(menu__btn);
-    menu__btn.addEventListener('click', function () {
-      navList.classList.toggle('show');
+   navbar.querySelector('.menu__btn').addEventListener('click', function () {
+    document.body.querySelector('.nav__menu').classList.toggle('show');
       document.body.querySelector('.overlay').style.display="block"
     });
    // document.body.appendChild(navbarUI);
     return navbar;
   };
-  return { navbar };
+  return { navbar,navMenu };
 };
 export { pageNav };
