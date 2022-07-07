@@ -29,27 +29,7 @@ background-color: black;
     font-size: 28px;
     position: fixed;
   }
-  .nav-buttons {
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* flex-grow: 1; */
-  
-    /* background-color: black; */
-    /* padding: 10px; */
-    /* z-index: 5; */
-  }
-  /* .nav-list.desktop {
-    flex-direction: row;
-    grid-column: 2/3;
-  /*grid-column: 2/3; */
-  /* justify-self: end; */
-  /* margin-right: 10px; */
-  /* position: unset; */
-  /* width: unset; */
-  /* padding-bottom: unset; */
-  
-  /* background-color: unset; */
-  /* }  */
+
   @media  (min-width:769px){
     .nav-list {
     flex-direction: row;
