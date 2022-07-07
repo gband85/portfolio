@@ -42,7 +42,7 @@ const pageNav = (brandText, ...links) => {
     // const menu=document.createElement("svg")
     const menu__btn = document.createElement(
       'button');
-     menu__btn.className='menu';
+     menu__btn.className='menu__btn';
     // menu.appendChild();
     const menu__icon=document.createElement("i")
 // console.log(icon);
@@ -53,7 +53,7 @@ menu__btn.appendChild(menu__icon);
     navbar.appendChild(navbarBrand);
     navbar.appendChild(navList);
     navbar.appendChild(menu__btn);
-    menu.addEventListener('click', function () {
+    menu__btn.addEventListener('click', function () {
       navList.classList.toggle('show');
       document.body.querySelector('.overlay').style.display="block"
     });
