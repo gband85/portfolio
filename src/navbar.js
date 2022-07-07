@@ -9,9 +9,9 @@ const pageNav = (brandText, ...links) => {
   let linksArr = links.slice(0);
   const navMenu=() => {
     const navMenu=  document.createElement('div');
-    navMenu.className='nav__menu';
-    const navList = document.createElement('ul');
-    navList.className = 'nav__menu__list';
+    navMenu.className='navmenu';
+    const navMenuList = document.createElement('ul');
+    navMenuList.className = 'navmenu__list';
     //iterate through args,create li with button with arg
     linksArr.map(function (item) {
       const listItem = document.createElement('li');
@@ -44,8 +44,8 @@ const pageNav = (brandText, ...links) => {
     const navbarNav = document.createElement('nav');
     navbarNav.className = 'navbar__nav';
     //create navbuttons
-    const navList = document.createElement('ul');
-    navList.className = 'nav-list';
+    const navbarList = document.createElement('ul');
+    navbarList.className = 'navbar__list';
     //iterate through args,create li with button with arg
     linksArr.map(function (item) {
       const listItem = document.createElement('li');
@@ -64,7 +64,7 @@ const pageNav = (brandText, ...links) => {
     navList.firstChild.firstChild.href="index.html#navbar"
     navList.firstChild.nextSibling.firstChild.href="index.html#projects-section"
     navList.firstChild.nextSibling.nextSibling.firstChild.href="index.html#contact-section"
- navbarNav.appendChild(navList);
+ navbarNav.appendChild(navbarList);
     // const menu=document.createElement("svg")
     const menu__btn = document.createElement(
       'button');
