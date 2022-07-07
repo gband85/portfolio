@@ -42,30 +42,22 @@
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 background-color: black;
   }
-  .nav-list {
+  .navbar__nav {
+    display: none;
+  }
+  .navbar__nav__list {
     /* overflow: hidden; */
     list-style: none;
     display: flex;
     align-items: center;
     gap: 20px;
     font-size: 28px;
-    position: fixed;
+    /* position: fixed; */
   }
 
   @media  (min-width:769px){
-    .nav-list {
-    flex-direction: row;
-    /* grid-column: 2/3; */
-  /*grid-column: 2/3; */
-  justify-self: end;
-  /* margin-right: 10px; */
-  /* font-size: 32px; */
-  position: static;
-  width: unset;
-  transform: unset;
-  transition: unset;
-  height: unset;
-  background-color: black;
+    .navbar__nav {
+display: block;
     }
   }
   /* .nav-list li:hover {
