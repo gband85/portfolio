@@ -53,29 +53,6 @@ menu__btn.appendChild(menu__icon);
     navbar.appendChild(navbarBrand);
     navbar.appendChild(navList);
     navbar.appendChild(menu__btn);
-    if (window.innerWidth >= 769) {
-      menu__btn.style.display = 'none';
-      // navList.classList.remove('show');
-      
-          } else {
-      menu.style.display = 'inline-block';
-      // navList.classList.add('show');
-          }
-    window.addEventListener('resize', function () {
-      if (window.innerWidth >= 769) {
-        menu.style.display = 'none';
-        // navList.classList.remove('show');
-                       } else {
-        menu.style.display = 'inline-block';
-        //unset transition, show menu,set transition
-        navList.style.transition = 'none';
-        setTimeout(function () {
-          navList.style.transition = 'transform .8s ease-in-out';
-        }, 100);
-        navList.classList.remove('show');
-                
-      }
-    });
     menu.addEventListener('click', function () {
       navList.classList.toggle('show');
       document.body.querySelector('.overlay').style.display="block"
