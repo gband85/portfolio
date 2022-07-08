@@ -35,9 +35,9 @@ const pageNav = (brandText, ...links) => {
       navMenuList.appendChild(listItem);
     });
     console.log(navMenuList.firstChild)
-    navMenuList.firstChild.firstChild.href="index.html#hero"
-    navMenuList.firstChild.nextSibling.firstChild.href="index.html#projects-section"
-    navMenuList.firstChild.nextSibling.nextSibling.firstChild.href="index.html#contact-section"
+    navMenuList.firstChild.nextSibling.firstChild.href="index.html#hero"
+    navMenuList.firstChild.nextSibling.nextSibling.firstChild.href="index.html#projects-section"
+    navMenuList.firstChild.nextSibling.nextSibling.nextSibling.firstChild.href="index.html#contact-section"
 // navMenu.appendChild(navMenuClose);
   navMenu.appendChild(navMenuList);
   window.addEventListener('resize', function () {
