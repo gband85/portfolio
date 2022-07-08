@@ -44,7 +44,7 @@ const page = () => {
         <img src="${images["tribute.png"]}" class="card__img">
           
             <div class="card__overlay">
-              <h5 class="card__title">Tribute Page</h5>
+              <h3 class="card__title">Tribute Page</h3>
             </div>
           </a>
         </div>
@@ -53,7 +53,7 @@ const page = () => {
               <img src="${images["survey.png"]}" class="card__img">
           
             <div class="card__overlay">
-              <h5 class="card__title">Survey</h5>
+              <h3 class="card__title">Survey</h3>
             </div>
           </a>
         </div>      
@@ -62,7 +62,7 @@ const page = () => {
         <img src="${images["product.png"]}" class="card__img">
           
             <div class="card__overlay">
-              <h5 class="card__title">Product Page</h5>
+              <h3 class="card__title">Product Page</h3>
             </div>
           </a>
         </div>      
@@ -71,7 +71,7 @@ const page = () => {
         <img src="${images["doc.png"]}" class="card__img">
           
             <div class="card__overlay">
-              <h5 class="card__title">Documentation Viewer</h5>
+              <h3 class="card__title">Documentation Viewer</h3>
             </div>
           </a>
         </div>
@@ -80,7 +80,7 @@ const page = () => {
         <img src="${images["quotes.png"]}" class="card__img">
           
             <div class="card__overlay">
-              <h5 class="card__title">Random Quote Machine</h5>
+              <h3 class="card__title">Random Quote Machine</h3>
             </div>
           </a>
         </div>
@@ -89,7 +89,7 @@ const page = () => {
         <img src="${images["markdown.png"]}" class="card__img">
           
             <div class="card__overlay">
-              <h5 class="card__title">Markdown Previewer</h5>
+              <h3 class="card__title">Markdown Previewer</h3>
             </div>
           </a>
         </div>
@@ -98,7 +98,7 @@ const page = () => {
         <img src="${images["drum-machine.png"]}" class="card__img">
           
             <div class="card__overlay">
-              <h5 class="card__title">Drum Machine</h5>
+              <h3 class="card__title">Drum Machine</h3>
             </div>
           </a>
         </div>
@@ -107,7 +107,7 @@ const page = () => {
         <img src="${images["calculator.png"]}" class="card__img">
           
             <div class="card__overlay">
-              <h5 class="card__title">Calculator</h5>
+              <h3 class="card__title">Calculator</h3>
             </div>
           </a>
         </div>
@@ -116,7 +116,7 @@ const page = () => {
               <img src="${images["clock.png"]}" class="card__img">
           
             <div class="card__overlay">
-              <h5 class="card__title">Pomodoro Clock</h5>
+              <h3 class="card__title">Pomodoro Clock</h3>
             </div>
           </a>
         </div>
@@ -125,7 +125,7 @@ const page = () => {
         <img src="${images["weather.png"]}" class="card__img">
           
             <div class="card__overlay">
-              <h5 class="card__title">Local Weather</h5>
+              <h3 class="card__title">Local Weather</h3>
             </div>
           </a>
         </div>
@@ -134,7 +134,7 @@ const page = () => {
         <img src="${images["wikipedia.png"]}" class="card__img">
           
             <div class="card__overlay">
-              <h5 class="card__title">Wikipedia Search</h5>
+              <h3 class="card__title">Wikipedia Search</h3>
             </div>
           </a>
         </div>
@@ -143,7 +143,7 @@ const page = () => {
         <img src="${images["landing_page.png"]}" class="card__img">
           
             <div class="card__overlay">
-              <h5 class="card__title">Landing Page</h5>
+              <h3 class="card__title">Landing Page</h3>
             </div>
           </a>
         </div>
@@ -152,7 +152,7 @@ const page = () => {
         <img src="${images["restaurant.png"]}" class="card__img">
           
             <div class="card__overlay">
-              <h5 class="card__title">Restaurant Site</h5>
+              <h3 class="card__title">Restaurant Site</h3>
             </div>
           </a>
         </div>
@@ -161,7 +161,7 @@ const page = () => {
         <img src="${images["sign_up_form.jpg"]}" class="card__img">
           
             <div class="card__overlay">
-              <h5 class="card__title">Sign-up Form</h5>
+              <h3 class="card__title">Sign-up Form</h3>
             </div>
           </a>
         </div>
@@ -174,11 +174,11 @@ const page = () => {
 <div class="contact">
 
   <a href="https://github.com/gband85" class="btn btn-primary" target="_blank"><span><i
-        class="fa-brands fa-github"></i></span>Github</a>
+        class="fa-brands fa-github"></i></span>  Github</a>
   <a href="https://www.linkedin.com/in/garrettanderson85/" class="btn btn-primary"
-    target="_blank"><span><i class="fa-brands fa-linkedin"></i></span>LinkedIn</a>
+    target="_blank"><span><i class="fa-brands fa-linkedin"></i></span> LinkedIn</a>
   <a href="https://www.freecodecamp.org/gband85" id="profile-link" class="btn btn-primary"
-    target="_blank"><span><i class="fa-brands fa-free-code-camp"></i></span>FCC</a>
+    target="_blank"><span><i class="fa-brands fa-free-code-camp"></i></span> FreeCodeCamp</a>
 </div>
 </div>
 </div>
