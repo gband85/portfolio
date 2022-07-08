@@ -29,7 +29,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Riverside Restaurant',
+      title: 'Garrett Anderson &mdash; Developer',
     }),
   ],
   optimization: {
