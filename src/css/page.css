@@ -63,7 +63,7 @@ font-size: calc(1.5rem + 2.1vw);
     flex-direction: column; 
     /* align-items: center; */
     padding-top: 83px;
-    background-color: #662200;
+    background-color: #550066;
 }
 
 .projects-title {
@@ -186,7 +186,7 @@ margin: 20px;
     justify-content: center;
      display: flex;
     flex-direction: column; 
-background-color: #116600;
+background-color: #303841;
   }
   .contact-title {
     text-align: center;
