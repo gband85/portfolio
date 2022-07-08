@@ -13,7 +13,6 @@
  header.appendChild(navMenu); 
  header.appendChild(navbar);
  document.body.appendChild(header);
- const main=document.createElement('main'); 
- main.appendChild(page().hero);
- main.appendChild(page().container);
- document.body.appendChild(main);
+ document.body.appendChild(page().hero);
+ document.body.appendChild(page().container);
+//  document.body.appendChild(main);
