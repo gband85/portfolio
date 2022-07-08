@@ -37,7 +37,7 @@ a:visited {
   color: white;
 }
 .hero__title {
-font-size: calc(1.425rem + 2.1vw);
+font-size: calc(1.5rem + 2.1vw);
 }
 .hero__subtitle {
   font-weight: 400;
@@ -73,7 +73,7 @@ font-size: calc(1.425rem + 2.1vw);
 /* margin: 30px 0; */
   text-align: center;
 margin-bottom: 30px;
-font-size: calc(1.425rem);
+font-size: 1.5rem;
 }
 .project-cards {
     display: grid;
@@ -189,7 +189,7 @@ background-color: #116600;
   }
   .contact-title {
     text-align: center;
-    font-size: calc(1.425rem + 2.1vw);
+    font-size: 1.5rem;
   }
   .contact {
     display: flex;
@@ -204,7 +204,7 @@ align-items: center;
   }
   .btn-primary {
     background-color: rgb(13, 110, 253);
-    
+    font-size: 1.3rem;
     color: white;
     
   }
