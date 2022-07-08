@@ -26,6 +26,7 @@ const page = () => {
   })
   const hero = document.createElement("div");
   hero.className = "hero";
+  hero.id='hero'
   hero.innerHTML = `<div class="hero__text">
     <h1 class="hero__title">Garrett Anderson</h1>
     <h2 class="hero__subtitle">Developer</h2>
@@ -35,7 +36,7 @@ const page = () => {
   container.innerHTML = `
   <div class="" id="projects-section">
     <div class="projects-title">
-    <h1 class="my-5 text-center">Work</h1>
+    <h1 class="my-5 text-center">My Work</h1>
     </div>
   <div class="project-cards">     
         <div class="card">
