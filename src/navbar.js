@@ -40,6 +40,12 @@ const pageNav = (brandText, ...links) => {
     navMenuList.firstChild.nextSibling.nextSibling.firstChild.href="index.html#contact-section"
 // navMenu.appendChild(navMenuClose);
   navMenu.appendChild(navMenuList);
+  window.addEventListener('resize', function () {
+    if (window.innerWidth >= 769) {
+      navMenu.classList.remove('show');
+      document.body.querySelector('.overlay').style.display="none";
+    }
+  });
   return navMenu;
     }
   const navbar = () => {
