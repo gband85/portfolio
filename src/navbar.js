@@ -31,7 +31,6 @@ const pageNav = (brandText, ...links) => {
       listItem.appendChild(navMenuLink);
       navMenuList.appendChild(listItem);
     });
-    console.log(navMenuList.firstChild);
     navMenuList.firstChild.nextSibling.firstChild.href = 'index.html#hero';
     navMenuList.firstChild.nextSibling.nextSibling.firstChild.href = 'index.html#projects-section';
     navMenuList.firstChild.nextSibling.nextSibling.nextSibling.firstChild.href = 'index.html#contact-section';
@@ -68,26 +67,25 @@ const pageNav = (brandText, ...links) => {
       listItem.appendChild(navbarLink);
       navbarNavList.appendChild(listItem);
     });
-    console.log(navbarNavList.firstChild);
     navbarNavList.firstChild.firstChild.href = 'index.html#hero';
     navbarNavList.firstChild.nextSibling.firstChild.href = 'index.html#projects-section';
     navbarNavList.firstChild.nextSibling.nextSibling.firstChild.href = 'index.html#contact-section';
     navbarNav.appendChild(navbarNavList);
     // const menu=document.createElement("svg")
-    const menu__btn = document.createElement(
+    const menuBtn = document.createElement(
       'button',
     );
-    menu__btn.className = 'menu__btn';
+    menuBtn.className = 'menu__btn';
     // menu.appendChild();
-    const menu__icon = document.createElement('i');
+    const menuIcon = document.createElement('i');
     // console.log(icon);
-    menu__icon.classList.add('fa-solid', 'fa-bars', 'fa-2xl');
-    menu__btn.appendChild(menu__icon);
+    menuIcon.classList.add('fa-solid', 'fa-bars', 'fa-2xl');
+    menuBtn.appendChild(menuIcon);
 
     navbar.appendChild(navbarBrand);
     navbar.appendChild(navbarNav);
-    navbar.appendChild(menu__btn);
-    menu__btn.addEventListener('click', () => {
+    navbar.appendChild(menuBtn);
+    menuBtn.addEventListener('click', () => {
       document.body.querySelector('.nav__menu').classList.add('show');
       document.body.querySelector('.overlay').style.display = 'block';
     });
