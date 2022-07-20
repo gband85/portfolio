@@ -9,11 +9,11 @@ function importAll(r) {
 }
 
 const images = importAll(
-  require.context('./images', false, /\.(png|jpe?g|svg)$/)
+  require.context('./images', false, /\.(png|jpe?g|svg)$/),
 );
 const page = () => {
   const overlay = document.createElement('div');
-  overlay.className = 'overlay'
+  overlay.className = 'overlay';
   overlay.addEventListener('click', () => {
     overlay.style.display = 'none';
     document.body.querySelector('.nav__menu').classList.remove('show');
@@ -175,7 +175,8 @@ const page = () => {
 <h1 class="">Contact Me</h1>
   </div>
 <div class="contact">
-
+<a href="mailto:mail@gbanderson.net" class="btn btn-primary"><span><i
+class="fa-solid fa-envelope"></i></span>  Email Me!</a>
   <a href="https://github.com/gband85" class="btn btn-primary" target="_blank"><span><i
         class="fa-brands fa-github"></i></span>  Github</a>
   <a href="https://www.linkedin.com/in/garrettanderson85/" class="btn btn-primary"
