@@ -159,6 +159,15 @@ const page = () => {
             </div>
           </a>
         </div>
+        <div class="card">
+        <a href="/projects/cv-project/">
+      <img src="${images['resume_builder.png']}" class="card__img">
+        
+          <div class="card__overlay">
+            <h3 class="card__title">Resume Creator</h3>
+          </div>
+        </a>
+      </div>
       </div>
   </div>
   <div class="contact-section" id="contact-section">
