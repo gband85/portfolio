@@ -168,6 +168,24 @@ const page = () => {
           </div>
         </a>
       </div>
+      <div class="card">
+      <a href="/projects/memory_game/">
+    <img src="${images['memory_game.png']}" class="card__img">
+      
+        <div class="card__overlay">
+          <h3 class="card__title">Memory Game</h3>
+        </div>
+      </a>
+    </div>
+    <div class="card">
+    <a href="/projects/todolist/">
+  <img src="${images['todolist.png']}" class="card__img">
+    
+      <div class="card__overlay">
+        <h3 class="card__title">ToDos App</h3>
+      </div>
+    </a>
+  </div>
       </div>
   </div>
   <div class="contact-section" id="contact-section">
