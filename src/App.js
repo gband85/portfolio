@@ -7,7 +7,7 @@ import Page from './Page';
 function App() {
   return (
     <div>
-    <PageNav/>
+    <PageNav links=(h} brandText={}/>
     <Hero/>
     <Page/>
     </div>
