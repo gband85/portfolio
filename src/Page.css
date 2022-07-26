@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:visited {
+ color: inherit;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 30;
+}
+.overlay.open {
+  display: block;
+}
+.hero {
+  height: 100vh;
+  background: url(../images/road.jpg) no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.hero__text  {
+  color: white;
+}
+.hero__title {
+font-size: calc(1.5rem + 2.1vw);
+}
+.hero__subtitle {
+  font-weight: 400;
+  text-align: center;
+  font-size: calc(1.375rem + 1.5vw);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #projects-section {
+    width: 100%;
+    align-items: center;
+     display: flex;
+    flex-direction: column; 
+    padding-top: 83px;
+    background-color: #550066;
+}
+
+.projects-title {
+  text-align: center;
+margin-bottom: 30px;
+font-size: 1.5rem;
+}
+.project-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1300px;
+    z-index: 8;
+gap: 30px;
+margin: 20px;
+}
+.card {
+    position: relative;
+    max-width: 720px;
+     display: flex;
+}
+.card__link {
+  padding-left: 59.175px;
+  padding-right: 59.175px;
+  color: white;
+} 
+.card__link:visited {
+  color: white;
+  }
+  .card a:visited {
+    color: white;
+    }
+.card__img {
+    width: 100%;
+    z-index: 3;
+    object-fit: cover;
+}
+.card__overlay {
+  position:absolute;
+   top:50%;
+  left:50%; 
+  width: 100%;
+  height: 100%;
+  transition: 1s ease;
+  background-color: black;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 5;
+}
+
+.card__title {
+
+}
+.card:hover .card__overlay {
+  opacity: 1;
+}
+
+  .contact-section {
+    width: 100%;
+    height: calc(100vh - 83px);
+    align-items: center;
+    justify-content: center;
+     display: flex;
+    flex-direction: column; 
+background-color: #303841;
+  }
+  .contact-title {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+padding: 40px;
+align-items: center;
+  }
+  .btn {
+    border-radius: 5px;
+    padding: 15px 30px;
+  }
+  .btn-primary {
+    background-color: rgb(13, 110, 253);
+    font-size: 1.3rem;
+    color: white;
+    
+  }
+  .btn-primary:hover{
+background-color: rgb(11, 94, 215);
+  }
+  @media screen and (min-width: 769px) {
+    .project-cards {
+      grid-template-columns: repeat(2, minmax(200px,1fr));
+    }
+  }
+  
+  @media screen and (min-width: 1025px) {
+    .project-cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
