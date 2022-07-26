@@ -1,3 +1,5 @@
+import './Page.css';
+
 function importAll(r) {
     const images = {};
     r.keys().forEach((item) => {
