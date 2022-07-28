@@ -1,4 +1,6 @@
-import "./css/navbar.css";
+import "./Navbar.css";
+import Icon from '@mdi/react';
+import { mdiClose, mdiMenu } from '@mdi/js';
 
 const pageNav = (props) => {
   // accept any args
@@ -8,56 +10,72 @@ const pageNav = (props) => {
       // navMenu.classList.remove("show");
       // document.body.querySelector(".overlay").style.display = "none";
   }
-  const linksArr = props.links.slice(0);
+  // const linksArr = props.links.slice(0);
 return (
   <header>
     <div className = "nav__menu">
     <ul className = "nav__menu__list">
             <li className = "close__menu">
-            <button className="close__menu__btn" onClick={d}><i class="fa-solid fa-x fa-2xl"></i></button>
+            <button className="close__menu__btn" onClick={()=>{
+                  document.body.querySelector('.nav__menu').classList.remove('show');
+    document.body.querySelector('.overlay').style.display = 'none';
+            }}>      <Icon path={mdiClose}
+        title="User Profile"
+        size={1}
+        horizontal
+        vertical
+        /></button>
     </li>
-    {/*  iterate through args,create li with button with arg */}
-    {/* {      linksArr.map((item) => {
-      return (
-        <li className = "menu-item">
-      <a onClick={()=>{navMenu.classList.remove("show");
-        document.body.querySelector(".overlay").style.display = "none";}} className = "nav-link">{item}</a>
 
+        <li className = "menu-item">
+      <a className = "nav-link" href="index.html#hero">About</a>
       </li>
-      )
-      }
-      } */}
+        
+        <li className = "menu-item">
+      <a className = "nav-link" href="index.html#projects-section">Work</a>
+      </li>
+        
+        <li className = "menu-item">
+      <a className = "nav-link" href="index.html#contact-section">Contact</a>
+      </li>
+      
 </ul>
     </div>
    <div className = "navbar">
-    <h1 className = "navbar__brand"></h1>
-    <a href="index.html">${props.brandText}</a>;
+    <h1 className = "navbar__brand"><a href="index.html">GBA</a></h1>    
       {/* create div */}
      <nav className = "navbar__nav">
       {/* //create navbuttons */}
 <ul className = "navbar__nav__list">
    {/* //   iterate through args,create li with button with arg */}
-   {  linksArr.map((item) => {
-       <li className = "menu-item">
-      <a className = "nav-link" >{item}</a>
-</li>
-     })}
-     {/* navbarNavList.firstChild.firstChild.href = "index.html#hero";
-     navbarNavList.firstChild.nextSibling.firstChild.href = "index.html#projects-section";
-     navbarNavList.firstChild.nextSibling.nextSibling.firstChild.href = "index.html#contact-section"; */}
-     {/* navbarNav.appendChild(navbarNavList); */}
+   <li className = "menu-item">
+      <a className = "nav-link" href="index.html#hero">About</a>
+      </li>
+
+        <li className = "menu-item">
+      <a className = "nav-link" href="index.html#projects-section">Work</a>
+      </li>
+
+        <li className = "menu-item">
+      <a className = "nav-link" href="index.html#contact-section">Contact</a>
+      </li>
+
 </ul>
 </nav>
-     <button className = "menu__btn">;
+     <button className = "menu__btn" onClick={()=>{
+          document.body.querySelector('.nav__menu').classList.add('show');
+    document.body.querySelector('.overlay').style.display = 'block';
+     }}>
 
-<i className="fa-solid fa-bars fa-2xl"></i>
+     <Icon path={mdiMenu}
+        title="User Profile"
+        size={1}
+        horizontal
+        vertical
+        
+        />
 </button>
-     {/* menuBtn.addEventListener("click", () => {
-       document.body.querySelector(".nav__menu").classList.add("show");
-       document.body.querySelector(".overlay").style.display = "block";
-     }); */}
- 
-     {/* return navbar; */}
+
 </div>
 
     </header>
