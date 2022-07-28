@@ -6,10 +6,7 @@ const pageNav = (props) => {
   // accept any args
  // brandText, ...links
 //   first arg is logo text,1 to end is buttons texts
-  const handleBtnClick=()=>{
-      // navMenu.classList.remove("show");
-      // document.body.querySelector(".overlay").style.display = "none";
-  }
+
   // const linksArr = props.links.slice(0);
 return (
   <header>
