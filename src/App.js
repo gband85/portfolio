@@ -4,10 +4,15 @@ import PageNav from './PageNav';
 import Hero from './Hero';
 import Page from './Page';
 
-function App() {
+const App = () =>{
   return (
     <div>
-    <PageNav links=(h} brandText={}/>
+    <div className = "overlay" onClick={()=>{
+       document.body.querySelector('.overlay').style.display = 'none';
+  document.body.querySelector('.nav__menu').classList.remove('show');
+    }}>
+</div>
+    <PageNav links={"h"} brandText={"g"}/>
     <Hero/>
     <Page/>
     </div>
