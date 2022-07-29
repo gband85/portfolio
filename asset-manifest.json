@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.066e3930.css",
+    "main.js": "/static/js/main.ddb26c9d.js",
+    "static/media/operahouse2.jpg": "/static/media/operahouse2.ee596cf5a20648b9911e.jpg",
+    "static/media/clock.png": "/static/media/clock.8183c052436cc4b1dbd9.png",
+    "static/media/tribute.png": "/static/media/tribute.c419b838fd2d97dade80.png",
+    "static/media/restaurant.png": "/static/media/restaurant.afbe39839ea0e95712d0.png",
+    "static/media/sign_up_form.jpg": "/static/media/sign_up_form.8997b9d8f9c3c0e11874.jpg",
+    "static/media/scatterplot.png": "/static/media/scatterplot.ad40e46d9f3f5c01f9ed.png",
+    "static/media/road.jpg": "/static/media/road.8227bc935b957cbcee96.jpg",
+    "static/media/weather.png": "/static/media/weather.2e9c930d5c1b182a66a5.png",
+    "static/media/choropleth.png": "/static/media/choropleth.dd60b9f58cb2ceef6143.png",
+    "static/media/product.png": "/static/media/product.c1bcdf971a80e6752d92.png",
+    "static/media/landing_page.png": "/static/media/landing_page.546ab5090e303dd51c39.png",
+    "static/media/doc.png": "/static/media/doc.68a6f06e123a42f1a7b8.png",
+    "static/media/treemap.png": "/static/media/treemap.12bc08090b4b9d5e8d14.png",
+    "static/media/heatmap.png": "/static/media/heatmap.294a06454eb72647b531.png",
+    "static/media/exercise.png": "/static/media/exercise.bd20325af50ededaf0c8.png",
+    "static/media/headerparser.png": "/static/media/headerparser.f6643ca7fc564b358370.png",
+    "static/media/timestamp.png": "/static/media/timestamp.377cf8bde21d0e8afe3b.png",
+    "static/media/quotes.png": "/static/media/quotes.a9333b59614b87b437da.png",
+    "static/media/markdown.png": "/static/media/markdown.dcc7961c2a23f968c967.png",
+    "static/media/resume_builder.png": "/static/media/resume_builder.ddee4b659db10101783f.png",
+    "static/media/survey.png": "/static/media/survey.09e682f439130149ca3f.png",
+    "static/media/file.png": "/static/media/file.d4b311f00eb7e19e647e.png",
+    "static/media/drum-machine.png": "/static/media/drum-machine.72b205498435f860ddab.png",
+    "static/media/url.png": "/static/media/url.fc09027a1a817f7aedcf.png",
+    "static/media/barchart.png": "/static/media/barchart.f95f90fc735ae31bf8c7.png",
+    "static/media/calculator.png": "/static/media/calculator.91423107cb2e1871105a.png",
+    "static/media/twitch.png": "/static/media/twitch.6759a0a10467e3babf73.png",
+    "static/media/wikipedia.png": "/static/media/wikipedia.ad7e58076c02399237ea.png",
+    "static/media/operahouse.jpg": "/static/media/operahouse.ab0a7f6386aa5eb52c14.jpg",
+    "index.html": "/index.html",
+    "main.066e3930.css.map": "/static/css/main.066e3930.css.map",
+    "main.ddb26c9d.js.map": "/static/js/main.ddb26c9d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.066e3930.css",
+    "static/js/main.ddb26c9d.js"
+  ]
+}
