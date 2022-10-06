@@ -28,6 +28,7 @@ const Page=()=>{
   "Random Quote Machine",
   "Restaurant Site",
   "Resume Creator",
+  "Shopping Cart",
   "Sign-up Form",
   "Survey",
   "Tribute Page",
@@ -36,7 +37,7 @@ const Page=()=>{
   ];
 
   const [projects,setProjects]=useState(importAll(
-    require.context('./images', false, /\.(png|jpg)$/),titlesArray
+    require.context('./images', false, /\.(png)$/),titlesArray
   ));
 
     return (
@@ -56,7 +57,7 @@ const Page=()=>{
     <h1 className="">Contact Me</h1>
       </div>
     <div className="contact">
-    <a href="mailto:mail@gbanderson.net" className="btn btn-pr/imary"><span><i
+    <a href="mailto:mail@gbanderson.net" className="btn btn-primary"><span><i
     className="fa-solid fa-envelope"></i></span>  Email Me!</a>
       <a href="https://github.com/gband85" className="btn btn-primary" target="_blank" rel="noreferrer"><span><i
             className="fa-brands fa-github"></i></span>  Github</a>
