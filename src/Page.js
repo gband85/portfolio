@@ -24,6 +24,7 @@ const Page=()=>{
     {title: "Drum Machine", href: "drummachine"},
     {title: "Landing Page", href: "landing_page"},
     {title: "Markdown Previewer", href: "markdown"},
+    {title: "Memory Game", href: "memory_game"},
     {title: "Product Page", href: "product"},    
     {title: "Random Quote Machine", href: "quotes"},
     {title: "Restaurant Site", href: "restaurant"},
