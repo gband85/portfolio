@@ -19,16 +19,17 @@ const Page=()=>{
 
   const projectArray=[   
     {title: "Calculator", href: "calculator-js"},
-    {title: "Pomodoro Clock", href: "clock-js"}, 
     {title: "Documentation Viewer", href: "doc"},
     {title: "Drum Machine", href: "drummachine"},
     {title: "Landing Page", href: "landing_page"},
     {title: "Markdown Previewer", href: "markdown"},
     {title: "Memory Game", href: "memory_game"},
+    {title: "Pomodoro Clock", href: "pomodoro-clock"}, 
     {title: "Product Page", href: "product"},    
     {title: "Random Quote Machine", href: "quotes"},
     {title: "Restaurant Site", href: "restaurant"},
     {title: "Resume Builder", href: "resume_builder"},
+    {title: "Rock Paper Scissors", href: "rockpaperscissors"},
     {title: "Shopping Cart", href: "shopping-cart"},
     {title: "Sign-up Form", href: "sign_up_form"},
     {title: "Survey", href: "survey"},
