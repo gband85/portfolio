@@ -3,12 +3,12 @@ import Card from './Card';
 import './Page.css';
 
 const Page=()=>{
-  function importAll(images,titles) {
+  function importAll(images,projectArray) {
     const projects = [];
     
     images.keys().forEach((image,index) => {
       //images[item.replace('./', '')] = r(item);
-      projects.push({title:titles[index],image: images(image),href:'/projects/'+images(image).match(/(?<=\/)[a-z-_]*(?=\.)/)})
+      projects.push({title:projectArray[index].title,image: images(image),href:'/'+projectArray[index].href})
     });
 //    for (let i=0;i<15;i++ ) {
 // images[i].title=titles[i]
@@ -17,27 +17,27 @@ const Page=()=>{
   }
 
 
-    const titlesArray=[   
-  "Calculator",
-  "Pomodoro Clock",
-  "Documentation Viewer",
-  "Drum Machine",
-  "Landing Page",
-  "Markdown Previewer",
-  "Product Page",    
-  "Random Quote Machine",
-  "Restaurant Site",
-  "Resume Creator",
-  "Shopping Cart",
-  "Sign-up Form",
-  "Survey",
-  "Tribute Page",
-  "Local Weather",
-  "Wikipedia Search",    
-  ];
+  const projectArray=[   
+    {title: "Calculator", href: "calculator-js"},
+    {title: "Pomodoro Clock", href: "clock-js"}, 
+    {title: "Documentation Viewer", href: "doc"},
+    {title: "Drum Machine", href: "drummachine"},
+    {title: "Landing Page", href: "landing_page"},
+    {title: "Markdown Previewer", href: "markdown"},
+    {title: "Product Page", href: "product"},    
+    {title: "Random Quote Machine", href: "quotes"},
+    {title: "Restaurant Site", href: "restaurant"},
+    {title: "Resume Builder", href: "resume_builder"},
+    {title: "Shopping Cart", href: "shopping-cart"},
+    {title: "Sign-up Form", href: "sign_up_form"},
+    {title: "Survey", href: "survey"},
+    {title: "Tribute Page", href: "tribute"},
+    {title: "Local Weather", href: "weather"},
+    {title: "Wikipedia Search", href: "wikipedia"}    
+    ];
 
   const [projects,setProjects]=useState(importAll(
-    require.context('./images', false, /\.(png)$/),titlesArray
+    require.context('./images', false, /\.(png)$/),projectArray
   ));
 
     return (
