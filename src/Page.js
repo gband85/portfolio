@@ -31,6 +31,7 @@ const Page=()=>{
     {title: "Shopping Cart", href: "shopping-cart"},
     {title: "Sign-up Form", href: "sign_up_form"},
     {title: "Survey", href: "survey"},
+    {title: "Todo List", href: "todolist"},
     {title: "Tribute Page", href: "tribute"},
     {title: "Local Weather", href: "weather"},
     {title: "Wikipedia Search", href: "wikipedia"}    
