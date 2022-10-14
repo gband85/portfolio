@@ -18,7 +18,7 @@ const Page=()=>{
 
 
   const projectArray=[   
-    {title: "Calculator", href: "calculator-js"},
+    {title: "Calculator", href: "calculator"},
     {title: "Documentation Viewer", href: "doc"},
     {title: "Drum Machine", href: "drummachine"},
     {title: "Landing Page", href: "landing_page"},
