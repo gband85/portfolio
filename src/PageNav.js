@@ -25,36 +25,36 @@ return (
     </li>
 
         <li className = "menu-item">
-      <a className = "nav-link" href="index.html#hero">About</a>
+      <a className = "nav-link" href="#hero">About</a>
       </li>
         
         <li className = "menu-item">
-      <a className = "nav-link" href="index.html#projects-section">Work</a>
+      <a className = "nav-link" href="#projects-section">Work</a>
       </li>
         
         <li className = "menu-item">
-      <a className = "nav-link" href="index.html#contact-section">Contact</a>
+      <a className = "nav-link" href="#contact-section">Contact</a>
       </li>
       
 </ul>
     </div>
    <div className = "navbar">
-    <h1 className = "navbar__brand"><a href="index.html">GBA</a></h1>    
+    <h1 className = "navbar__brand"><a href="/">GBA</a></h1>    
       {/* create div */}
      <nav className = "navbar__nav">
       {/* //create navbuttons */}
 <ul className = "navbar__nav__list">
    {/* //   iterate through args,create li with button with arg */}
    <li className = "menu-item">
-      <a className = "nav-link" href="index.html#hero">About</a>
+      <a className = "nav-link" href="#hero">About</a>
       </li>
 
         <li className = "menu-item">
-      <a className = "nav-link" href="index.html#projects-section">Work</a>
+      <a className = "nav-link" href="#projects-section">Work</a>
       </li>
 
         <li className = "menu-item">
-      <a className = "nav-link" href="index.html#contact-section">Contact</a>
+      <a className = "nav-link" href="#contact-section">Contact</a>
       </li>
 
 </ul>
